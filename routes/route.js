@@ -12,10 +12,9 @@ exports.home=function(req,res){
           }
       }
   }
-  console.log(addresses);
+  // console.log(addresses);
 
-  
-  res.render('home');
+  res.render('home', { ejs_var_addresses : addresses[0] });
 }
 
 
