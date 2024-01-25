@@ -1,7 +1,6 @@
 var os = require('os');
 
 exports.home=function(req,res){
-  res.render('home');
 
   var interfaces = os.networkInterfaces();
   var addresses = [];
@@ -14,6 +13,9 @@ exports.home=function(req,res){
       }
   }
   console.log(addresses);
+
+  
+  res.render('home');
 }
 
 
